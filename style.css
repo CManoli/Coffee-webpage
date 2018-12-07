@@ -1,0 +1,149 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* NAVBAR */
+#nav-bar {
+    background-color: #fff;
+    height: 3rem;
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 25vw;
+}
+
+li {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* LOGO */
+.logo {
+    background-color: #333;
+    height: 20rem;
+    padding-top: 3rem;
+}
+
+#header-img {
+    display: block;
+    width: 15rem;
+    margin: auto;
+    padding-top: 3.5rem;
+}
+
+/* ABOUT */
+#About {
+    margin: 4em auto;
+    
+}
+
+#About .description {
+    padding: 0 3rem;
+}
+
+.video {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* SUBSCRIBE */
+#Subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20px;
+    padding: 100px 0;
+}
+
+#email {
+    max-width: 250px;
+    width: 100%;
+    padding: 5px;
+}
+
+#submit {
+    max-width: 150px;
+    height: 30px;
+    margin: 10px 0;
+    border: 0;
+    cursor: pointer;
+    background-color: teal;
+    border-radius: 3px;
+}
+
+.btn {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* PRICING */ 
+#Pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+#Pricing #select, 
+#Pricing #special,
+#Pricing #creme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    padding-bottom: 3rem;
+    padding-top: 0;
+}
+
+#Pricing #select .name, 
+#Pricing #special .name,
+#Pricing #creme .name {
+    border-top: 3px solid #b0bec5; 
+    border-bottom: 3px solid #b0bec5;
+    padding: 10px 0; 
+    font-weight: bold;
+}
+
+#Pricing #select h3, 
+#Pricing #special h3,
+#Pricing #creme h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+    background-color: #b0bec5;
+    padding: 0 1rem;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 580px) {
+    #Pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
